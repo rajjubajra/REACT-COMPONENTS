@@ -52,7 +52,7 @@ function MeausingAdvice() {
         <div className="md:col-span-5 col-span-12">
           <ImageOnload 
           cssClass="h-96 w-auto object-cover"
-          src="./images/measuring-advice.jpg" />
+          src="/images/measuring-advice.jpg" />
         </div>
 
       </div>
