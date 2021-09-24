@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-tailwind-components/themes/static/css/main.721956bf.chunk.css",
-    "main.js": "/react-tailwind-components/themes/static/js/main.038a285a.chunk.js",
-    "main.js.map": "/react-tailwind-components/themes/static/js/main.038a285a.chunk.js.map",
-    "runtime-main.js": "/react-tailwind-components/themes/static/js/runtime-main.5c42ca87.js",
-    "runtime-main.js.map": "/react-tailwind-components/themes/static/js/runtime-main.5c42ca87.js.map",
-    "static/js/2.93992e3f.chunk.js": "/react-tailwind-components/themes/static/js/2.93992e3f.chunk.js",
-    "static/js/2.93992e3f.chunk.js.map": "/react-tailwind-components/themes/static/js/2.93992e3f.chunk.js.map",
-    "static/js/3.60cef197.chunk.js": "/react-tailwind-components/themes/static/js/3.60cef197.chunk.js",
-    "static/js/3.60cef197.chunk.js.map": "/react-tailwind-components/themes/static/js/3.60cef197.chunk.js.map",
-    "index.html": "/react-tailwind-components/themes/index.html",
-    "static/css/main.721956bf.chunk.css.map": "/react-tailwind-components/themes/static/css/main.721956bf.chunk.css.map",
-    "static/js/2.93992e3f.chunk.js.LICENSE.txt": "/react-tailwind-components/themes/static/js/2.93992e3f.chunk.js.LICENSE.txt"
+    "main.css": "/react-components/themes/static/css/main.721956bf.chunk.css",
+    "main.js": "/react-components/themes/static/js/main.b5d686ed.chunk.js",
+    "main.js.map": "/react-components/themes/static/js/main.b5d686ed.chunk.js.map",
+    "runtime-main.js": "/react-components/themes/static/js/runtime-main.0b882592.js",
+    "runtime-main.js.map": "/react-components/themes/static/js/runtime-main.0b882592.js.map",
+    "static/js/2.93992e3f.chunk.js": "/react-components/themes/static/js/2.93992e3f.chunk.js",
+    "static/js/2.93992e3f.chunk.js.map": "/react-components/themes/static/js/2.93992e3f.chunk.js.map",
+    "static/js/3.60cef197.chunk.js": "/react-components/themes/static/js/3.60cef197.chunk.js",
+    "static/js/3.60cef197.chunk.js.map": "/react-components/themes/static/js/3.60cef197.chunk.js.map",
+    "index.html": "/react-components/themes/index.html",
+    "static/css/main.721956bf.chunk.css.map": "/react-components/themes/static/css/main.721956bf.chunk.css.map",
+    "static/js/2.93992e3f.chunk.js.LICENSE.txt": "/react-components/themes/static/js/2.93992e3f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c42ca87.js",
+    "static/js/runtime-main.0b882592.js",
     "static/js/2.93992e3f.chunk.js",
     "static/css/main.721956bf.chunk.css",
-    "static/js/main.038a285a.chunk.js"
+    "static/js/main.b5d686ed.chunk.js"
   ]
 }
