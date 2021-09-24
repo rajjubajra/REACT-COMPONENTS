@@ -1,5 +1,6 @@
 import {IconContext} from "react-icons";
 import {BsChevronLeft, BsChevronRight} from 'react-icons/bs';
+import {baseurl} from '../../config';
 
 
 function BigImage() {
@@ -11,7 +12,7 @@ function BigImage() {
         </IconContext.Provider>
       </div>
       <div className="w-full m-auto">
-        <img className="w-full" src="/images/t-shirts.jpg" alt="t-shirt" />
+        <img className="w-full" src={`${baseurl.URL}/images/t-shirts.jpg`} alt="t-shirt" />
       </div>
       <div className="px-4 cursor-pointer">
       <IconContext.Provider value={{ size:42}}>
