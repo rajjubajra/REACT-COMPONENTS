@@ -7,7 +7,7 @@ function ItemDetailImage({handleBigImage}) {
           <p className="text-xs">Front</p>
           <ImageOnload
       cssClass="cursor-zoom-in"
-      src="./images/t-shirts.jpg"
+      src="/images/t-shirts.jpg"
       alt="T-Shirt" />
         </div>
         
@@ -15,7 +15,7 @@ function ItemDetailImage({handleBigImage}) {
           <p className="text-xs mt-2">Back</p>
           <ImageOnload
           cssClass="cursor-zoom-in"
-          src="./images/t-shirts.jpg"
+          src="/images/t-shirts.jpg"
           alt="T-Shirt" />
         </div>
       </div>

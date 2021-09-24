@@ -8,7 +8,7 @@ function Item() {
       <div className="border border-gray-300 w-80 h-98 p-3">
           <ImageOnload 
         cssClass="w-80 h-96 object-cover"
-        src="./images/t-shirts.jpg"
+        src="/images/t-shirts.jpg"
         alt="T-Shirt"
         />
         <p className="font-extralight tracking-wide">Cotton Short Sleev</p>
