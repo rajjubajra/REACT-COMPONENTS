@@ -12,6 +12,8 @@ function App() {
       <h1 className="text-3xl text-center">React re-usable Components</h1>
 
       <BrowserRouter>
+      
+      <Link to="/">THEMES</Link>
 
         <Switch>
           <Route exact path="/">
