@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {AiOutlineMail} from 'react-icons/ai';
 import {FiPhoneCall} from 'react-icons/fi';
+import {baseurl} from '../config';
 
 function About02() {
 
@@ -8,7 +9,7 @@ function About02() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(()=>{
-    fetch('http://localhost:3000/data/about.json')
+    fetch(`${baseurl.URL}/data/about.json`)
     .then(res => res.json())
     .then( data => setAboutdata(data))
     .catch(err => console.log(err));

@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import BtnBack from '../Buttons/BtnBack';
 import BtnTicket from '../Buttons/BtnTicket';
+import {baseurl} from '../config';
 
 
 
@@ -10,7 +11,7 @@ function TourDetail() {
   const [fetched, setFetched] = useState(false);
   
   useEffect(()=>{
-    fetch('http://localhost:3000/data/tour.json')
+    fetch(`${baseurl.URL}/data/tour.json`)
     .then(res => res.json())
     .then( data => setTourdata(data))
     .catch(err => console.log(err));

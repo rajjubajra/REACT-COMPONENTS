@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import ImageOnload from '../ImageOnload';
 import {GrClose} from 'react-icons/gr';
+import {baseurl} from '../config';
 
 function NewsDetail02({index}) {
 
@@ -11,7 +12,7 @@ function NewsDetail02({index}) {
   
 
   useEffect(()=>{
-    fetch('http://localhost:3000/data/news.json')
+    fetch(`${baseurl.URL}/data/news.json`)
     .then(res => res.json())
     .then( data => setNewsdata(data))
     .catch(err => console.log(err));

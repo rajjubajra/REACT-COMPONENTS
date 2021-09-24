@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Desktop from './Desktop';
 import Mobile from './Mobile';
+import {baseurl} from '../../config';
 
 function MenuBar01() {
 
@@ -16,7 +17,7 @@ function MenuBar01() {
 
     useEffect(()=>{
 
-      fetch('http://localhost:3000/data/mainmenu.json')
+      fetch(`${baseurl.URL}/data/mainmenu.json`)
       .then(res => res.json())
       .then(data => setMenudata(data))
       .catch(err => console.log(err))

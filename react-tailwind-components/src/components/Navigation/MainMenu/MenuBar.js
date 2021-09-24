@@ -4,6 +4,7 @@ import Logo from './Logo';
 import MainMenu from "./MainMenu";
 import MenuIcon from './MenuIcon';
 import SearchIcon from './SearchIcon';
+import {baseurl} from '../../config';
 
 
 
@@ -22,7 +23,7 @@ function MenuBar() {
 
   useEffect(()=>{
 
-    fetch('http://localhost:3000/data/mainmenu.json')
+    fetch(`${baseurl.URL}/data/mainmenu.json`)
     .then(res => res.json())
     .then(data => setMenudata(data))
     .catch(err => console.log(err))

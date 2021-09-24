@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import BtnBack from '../Buttons/BtnBack';
+import {baseurl} from '../config';
 
 
 function NewsDetail() {
@@ -8,7 +9,7 @@ function NewsDetail() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(()=>{
-    fetch('http://localhost:3000/data/news.json')
+    fetch(`${baseurl.URL}/data/news.json`)
     .then(res => res.json())
     .then( data => setNewsdata(data))
     .catch(err => console.log(err));

@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import BtnReadMore from '../Buttons/BtnReadMore';
 import ImageOnload from '../ImageOnload';
+import {baseurl} from '../config';
 
 function MusicList() {
 
@@ -8,7 +9,7 @@ function MusicList() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(()=>{
-      fetch('http://localhost:3000/data/musiclist.json')
+      fetch(`${baseurl.URL}/data/musiclist.json`)
       .then( res => res.json())
       .then( data => setListData(data) )
       .catch( err => console.log(err));

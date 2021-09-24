@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import BtnReadMore from '../Buttons/BtnReadMore';
 import ImageOnload from '../ImageOnload';
+import {baseurl} from '../config';
 //import NewsDetails02 from './NewsDetail02';
 //import {GrClose} from 'react-icons/gr';
 
@@ -14,7 +15,7 @@ function NewsList02() {
   const [detail, setDetail] = useState('');
 
   useEffect(()=>{
-    fetch('http://localhost:3000/data/news.json')
+    fetch(`${baseurl.URL}/data/news.json`)
     .then(res => res.json())
     .then( data => setNewsdata(data))
     .catch(err => console.log(err));

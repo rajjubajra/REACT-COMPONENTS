@@ -5,6 +5,7 @@ import {RiAmazonFill} from 'react-icons/ri';
 import {FaSpotify, FaGooglePlay, FaYoutube} from 'react-icons/fa';
 import {SiApplemusic} from 'react-icons/si';
 import {AiOutlinePlayCircle} from 'react-icons/ai';
+import {baseurl} from '../config';
 
 
 function MusicDetail() {
@@ -13,7 +14,7 @@ function MusicDetail() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(()=>{
-      fetch('http://localhost:3000/data/musiclist.json')
+      fetch(`${baseurl.URL}/data/musiclist.json`)
       .then( res => res.json())
       .then( data => setListData(data) )
       .catch( err => console.log(err));

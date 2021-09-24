@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import {baseurl} from '../config';
 
 
 
@@ -9,7 +10,7 @@ function TourList() {
   const [tourdata, setTourdata] = useState([]);
   
   useEffect(()=>{
-    fetch('http://localhost:3000/data/tour.json')
+    fetch(`${baseurl.URL}/data/tour.json`)
     .then(res => res.json())
     .then( data => setTourdata(data))
     .catch(err => console.log(err));

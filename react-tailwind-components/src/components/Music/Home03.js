@@ -1,6 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import ImageOnload from '../ImageOnload';
 import BtnReadMore from '../../components/Buttons/BtnReadMore';
+import {baseurl} from '../config';
+
 
 function Home03() {
 
@@ -8,7 +10,7 @@ function Home03() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(()=>{
-    fetch('http://localhost:3000/data/feature.json')
+    fetch(`${baseurl.URL}/data/feature.json`)
     .then( res => res.json())
     .then( data => setState(data))
     .catch(err => console.log(err))

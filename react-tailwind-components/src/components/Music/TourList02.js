@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import {GrFormNextLink, GrClose} from 'react-icons/gr';
+import {baseurl} from '../config';
 
 
 function TourList02() {
@@ -10,7 +11,7 @@ function TourList02() {
   const [viewDetail, setViewDetail] = useState(false);
   
   useEffect(()=>{
-    fetch('http://localhost:3000/data/tour.json')
+    fetch(`${baseurl.URL}/data/tour.json`)
     .then(res => res.json())
     .then( data => setTourdata(data))
     .catch(err => console.log(err));

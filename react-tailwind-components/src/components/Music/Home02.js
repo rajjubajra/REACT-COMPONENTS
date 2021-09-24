@@ -3,6 +3,8 @@ import ImageOnload from '../ImageOnload';
 import {GrNext, GrPrevious} from 'react-icons/gr';
 import {AiOutlineMail} from 'react-icons/ai';
 import {FiPhoneCall} from 'react-icons/fi';
+import {baseurl} from '../config';
+
 
 function Home02() {
 
@@ -14,7 +16,7 @@ function Home02() {
   const [currnetPage, setCurrentPage] = useState(0);
 
   useEffect(()=>{
-      fetch('http://localhost:3000/data/musiclist.json')
+      fetch(`${baseurl.URL}/data/musiclist.json`)
       .then( res => res.json())
       .then( data => setListData(data) )
       .catch( err => console.log(err));
