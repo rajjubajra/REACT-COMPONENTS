@@ -12,7 +12,7 @@ function Contact() {
 
             <ImageOnload 
             cssClass="w-full h-40 md:h-40  md:w-1/2 md:h-96 object-cover"
-            src={`${baseurl.URL}/images/Music2011_5.jpeg`} 
+            src={`/${baseurl.URL}/images/Music2011_5.jpeg`} 
             alt="Music Page"
             />
 
