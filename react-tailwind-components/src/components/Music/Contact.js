@@ -2,7 +2,6 @@ import React from 'react';
 //import ContactForm from './ContactForm';
 import SubscriptionFrom from './SubscriptionForm';
 import ImageOnload from '../ImageOnload';
-import {baseurl} from '../config';
 
 function Contact() {
   return (
@@ -12,7 +11,7 @@ function Contact() {
 
             <ImageOnload 
             cssClass="w-full h-40 md:h-40  md:w-1/2 md:h-96 object-cover"
-            src={`/${baseurl.URL}/images/Music2011_5.jpeg`} 
+            src="/images/Music2011_5.jpeg" 
             alt="Music Page"
             />
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageOnload from '../ImageOnload';
-import {baseurl} from '../config';
+
 
 function Gear(props) {
 
@@ -10,7 +10,7 @@ function Gear(props) {
       lg:max-w-screen-sm bg-gray-200">
       
       <div>
-        <ImageOnload src={`/${baseurl.URL}/images/Music2011_3.jpeg`}
+        <ImageOnload src={"/images/Music2011_3.jpeg" }
         alt="Music Gear"
         cssClass="w-full"
         />
