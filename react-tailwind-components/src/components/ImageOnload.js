@@ -1,14 +1,19 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import {baseurl} from './config';
 
 function ImageOnload({src, alt, cssClass, width, height}) {
 
   const [status, setStatus] = useState(false);
   const [blur, setBlur] = useState('hidden');
+  const [image, setImage] = useState('');
   //console.log(status);
 
   useEffect(()=>{
     status && setBlur('');
-  },[status])
+
+    setImage(`${baseurl.URL}${src}`);
+
+  },[src, status])
 
   
 
@@ -17,7 +22,7 @@ function ImageOnload({src, alt, cssClass, width, height}) {
     className={cssClass}
     onLoad={()=>setStatus(true)}
     onError={()=>setStatus(false)}
-    src={src} 
+    src={image} 
     alt={alt} 
     /> 
   )
