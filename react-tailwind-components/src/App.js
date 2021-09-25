@@ -14,7 +14,6 @@ function App() {
       <BrowserRouter>
         <div className="flex flex-row justify-center">
           <Link className="px-10 py-5 m-1" to="/">Themes</Link>
-          <Link className="px-10 py-5 m-1" to="/https://yellow-website.com">Home</Link>
         </div>
 
         <Switch>
