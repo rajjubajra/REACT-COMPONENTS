@@ -2,7 +2,7 @@ import {GrFormNextLink} from 'react-icons/gr';
 
 
 
-function TourList02({date, title, venue, view}) {
+function TourList02({date, title, venue, view, index}) {
 
 
   return (
@@ -15,7 +15,7 @@ function TourList02({date, title, venue, view}) {
               </div>
               <div className="col-span-6 border border-gray-200">
                   <div className="cursor-pointer p-2 text-sm flex"
-                    onClick={() => view} >
+                    onClick={() => view(index)} >
                   <div>View Detail</div>
                   <div className="pt-1 px-2"><GrFormNextLink /></div>
               </div>

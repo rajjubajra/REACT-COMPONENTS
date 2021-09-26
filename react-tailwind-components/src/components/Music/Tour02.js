@@ -25,6 +25,7 @@ function Tour02() {
 
 
   function view(index){
+    console.log("clicked event details")
     setEvent(index);
   }
 
@@ -44,6 +45,7 @@ function Tour02() {
                 date={item.date}
                 title={item.event_title}
                 venue={item.venue}
+                index={index}
                 view={view}
               />
           })
