@@ -2,7 +2,10 @@ import React from 'react'
 import {GrClose} from 'react-icons/gr';
 
 
-function TourDetail02({event_title, date, venue, details}) {
+function TourDetail02({event_title, date, venue, body}) {
+
+  console.log(event_title, date, venue, body);
+
   return (
       <div className={`absolute top-0 md:relative z-10 bg-white
       p-10 md:block`}>
@@ -30,7 +33,7 @@ function TourDetail02({event_title, date, venue, details}) {
           
           <div className="col-span-12">
             <div>
-              <div dangerouslySetInnerHTML={{__html: details}} />
+              <div dangerouslySetInnerHTML={{__html: body}} />
             </div>
           </div>
 

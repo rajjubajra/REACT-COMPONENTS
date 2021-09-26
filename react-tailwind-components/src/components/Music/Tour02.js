@@ -10,7 +10,7 @@ function Tour02() {
   const [tourdata, setTourdata] = useState([]);
   const [fetched, setFetched] = useState(false);
   const [event, setEvent] = useState(0);
-  const [viewDetail, setViewDetail] = useState(false);
+  
   
   useEffect(()=>{
     fetch(`${baseurl.URL}/data/tour.json`)
@@ -26,11 +26,10 @@ function Tour02() {
 
   function view(index){
     setEvent(index);
-    setViewDetail(true);
   }
 
 
-  console.log("view details",viewDetail);
+
 
 
   return (
@@ -48,20 +47,22 @@ function Tour02() {
                 date={item.date}
                 title={item.event_title}
                 venue={item.venue}
+                view={view(index)}
               />
           })
         }
+      </div>
 
-        {/** TOUR DETAILS */}
+       {/** TOUR DETAILS */}
+      <div>
         {fetched &&
           <TourDetail02 
             event_title={tourdata[event].event_title}
-            event_date={tourdata[event].date}
+            date={tourdata[event].date}
             venue={tourdata[event].venue}
             body={tourdata[event].details}
           />
         }
-        
       </div>
       
     </div>
