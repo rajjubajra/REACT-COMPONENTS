@@ -51,14 +51,17 @@ function Tour02() {
               />
           })
         }
-        
+
         {/** TOUR DETAILS */}
-        <TourDetail02 
-          event_title={tourdata[event].event_title}
-          event_date={tourdata[event].date}
-          venue={tourdata[event].venue}
-          body={tourdata[event].details}
-        />
+        {fetched &&
+          <TourDetail02 
+            event_title={tourdata[event].event_title}
+            event_date={tourdata[event].date}
+            venue={tourdata[event].venue}
+            body={tourdata[event].details}
+          />
+        }
+        
       </div>
       
     </div>
