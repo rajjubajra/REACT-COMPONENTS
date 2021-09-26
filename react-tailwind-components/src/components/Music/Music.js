@@ -2,7 +2,7 @@ import Home01 from './Home01';
 import Home02 from './Home02'; 
 import Home03 from './Home03';
 import TourList from './TourList';
-import TourList02 from './TourList02';
+import Tour02 from './Tour02';
 import TourDetail from './TourDetail';
 import NewsList from './NewsList';
 import NewsList02 from './NewsList02';
@@ -38,8 +38,8 @@ function Music() {
         <Home03 />
         {ComName("TourList")}
         <TourList />
-        {ComName("TourList02")}
-        <TourList02 />
+        {ComName("Tour02")}
+        <Tour02 />
         {ComName("TourDetails")}
         <TourDetail />
         {ComName("NewsList")}
