@@ -29,9 +29,6 @@ function Tour02() {
   }
 
 
-
-
-
   return (
     <div className="w-full max-w-screen-xl m-auto p-10 relative
     grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-2">
@@ -47,13 +44,13 @@ function Tour02() {
                 date={item.date}
                 title={item.event_title}
                 venue={item.venue}
-                view={view(index)}
+                view={view}
               />
           })
         }
       </div>
 
-       {/** TOUR DETAILS */}
+      {/** TOUR DETAILS */}
       <div>
         {fetched &&
           <TourDetail02 
