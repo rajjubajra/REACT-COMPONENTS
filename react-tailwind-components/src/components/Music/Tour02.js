@@ -4,7 +4,6 @@ import TourList02 from './TourList02';
 import TourDetail02 from './TourDetail02';
 
 
-
 function Tour02() {
 
   const [tourdata, setTourdata] = useState([]);
@@ -17,15 +16,15 @@ function Tour02() {
     .then(res => res.json())
     .then( data => setTourdata(data))
     .catch(err => console.log(err));
-  },[])
+  },[]);
 
   useEffect(() => {
     tourdata.length > 0 && setFetched(true);
-  },[tourdata.length])
+  },[tourdata.length]);
 
 
   function view(index){
-    console.log("clicked event details")
+    console.log("clicked event details");
     setEvent(index);
   }
 

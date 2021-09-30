@@ -31,7 +31,9 @@ function NewsList() {
             <div className="text-center">
               <h2 className="text-2xl my-4">{item.title}</h2>
             </div>
-            <div><div  className="text-center my-4" dangerouslySetInnerHTML={{__html: item.body.substring(0,300)}} /></div>
+            <div>
+              <div  className="text-center my-4" dangerouslySetInnerHTML={{__html: item.body.substring(0,300)}} />
+            </div>
             <div className="text-center"><BtnReadMore link="#" /></div>
           </div>
         })

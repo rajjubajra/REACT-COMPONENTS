@@ -4,7 +4,7 @@ import {GrClose} from 'react-icons/gr';
 
 function TourDetail02({event_title, date, venue, body}) {
 
-  console.log(event_title, date, venue, body);
+  //console.log(event_title, date, venue, body);
 
   return (
       <div className={`absolute top-0 md:relative z-10 bg-white
